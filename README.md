@@ -1,9 +1,8 @@
-# YSI
+# CursorAPI
 
 ## General Information
 
-* [installation](installation.md)
-* 
+* [Use of Functions](howtouse.md)
 
 <!--
 
