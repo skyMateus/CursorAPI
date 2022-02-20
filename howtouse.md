@@ -1,23 +1,32 @@
+## Warning!
+Set "capi" first!
+
+```csharp
+CursorAPI capi = new CursorAPI();
+```
+
+-> "capi" it can be by the name you want, it's your choice
+
 Examples:
 ---
 
 Mouse Speed
 
   ```csharp
-  int speed = GetMouseSpeed();
+  int speed = capi.GetMouseSpeed();
   label1.Text = $"Mouse speed: {speed}";
   ```
 
   ```csharp
-  SetMouseSpeed(1); //min
-  SetMouseSpeed(20); //max
+  capi.SetMouseSpeed(1); //min
+  capi.SetMouseSpeed(20); //max
   ```
 ---
 
 Mouse Click Lock
 
   ```csharp
-  if(GetMouseClickLock() == 1)
+  if(capi.GetMouseClickLock() == 1)
   {
        label1.Text = "Click Lock: Active!";
   }
@@ -28,15 +37,15 @@ Mouse Click Lock
   ```
 
   ```csharp
-  SetMouseClickLock(1); // active
-  SetMouseClickLock(0); // no active
+  capi.SetMouseClickLock(1); // active
+  capi.SetMouseClickLock(0); // no active
   ```
 ---
 
 Mouse Vanish
 
   ```csharp
-  if(GetMouseVanish() == 1)
+  if(capi.GetMouseVanish() == 1)
   {
        label1.Text = "Mouse Vanish: Active!";
   }
@@ -47,15 +56,15 @@ Mouse Vanish
   ```
   
   ```csharp
-  SetMouseVanish(1); // active
-  SetMouseVanish(0); // no active
+  capi.SetMouseVanish(1); // active
+  capi.SetMouseVanish(0); // no active
   ```
 ---
 
 Mouse Shadow
 
   ```csharp
-  if(GetMouseShadow() == 1)
+  if(capi.GetMouseShadow() == 1)
   {
        label1.Text = "Mouse Shadow: Active!";
   }
@@ -66,15 +75,15 @@ Mouse Shadow
   ```
   
   ```csharp
-  SetMouseShadow(1); // active
-  SetMouseShadow(0); // no active
+  capi.SetMouseShadow(1); // active
+  capi.SetMouseShadow(0); // no active
   ```
 ---
 
 Mouse Ctrl Show
 
   ```csharp
-  if(GetMouseCtrlShow() == 1)
+  if(capi.GetMouseCtrlShow() == 1)
   {
        label1.Text = "Ctrl Show: Active!";
   }
@@ -85,6 +94,6 @@ Mouse Ctrl Show
   ```
   
   ```csharp
-  SetMouseCtrlShow(1); // active
-  SetMouseCtrlShow(0); // no active
+  capi.SetMouseCtrlShow(1); // active
+  capi.SetMouseCtrlShow(0); // no active
   ```
